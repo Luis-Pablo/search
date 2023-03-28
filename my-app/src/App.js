@@ -2,15 +2,17 @@
 import './App.css';
 import Search from './prueba';
 import Feeds from './feeds';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle';
+
 function App() {
   return (
-    <>
-      <Search/>
-      <Feeds />
+    <div className="container">
+      <div className="row ">
+        <div className="col w-25"><Search/></div>
+      
+        <div className="col w-75"><Feeds /></div>
+      </div>
 
-    </>
+    </div>
   );
 }
 
